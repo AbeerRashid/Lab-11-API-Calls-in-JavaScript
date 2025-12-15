@@ -51,3 +51,23 @@ input, textarea {
     padding: 10px;
     margin: 10px 0;
 }
+
+.post-box {
+  width: 100%;
+  max-width: 500px; /* or whatever size you want */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.post-box input,
+.post-box textarea,
+.post-box button {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
