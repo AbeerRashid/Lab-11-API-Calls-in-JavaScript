@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10 - API Calls</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Lab 10 – API Calls</h1>
+
+    <div class="buttons">
+        <button id="fetchBtn">Fetch Data with fetch()</button>
+        <button id="xhrBtn">Fetch Data with XHR</button>
+    </div>
+
+    <div id="output" class="output-box"></div>
+
+    <h2>Create a New Post (POST)</h2>
+    <form id="postForm">
+        <input type="text" id="postTitle" placeholder="Post Title" required>
+        <textarea id="postBody" placeholder="Post Body" required></textarea>
+        <button type="submit">Submit Post</button>
+    </form>
+
+    <h2>Update a Post (PUT)</h2>
+    <form id="putForm">
+        <input type="number" id="putId" placeholder="Post ID to Update" required>
+        <input type="text" id="putTitle" placeholder="Updated Title" required>
+        <textarea id="putBody" placeholder="Updated Body" required></textarea>
+        <button type="submit">Update Post</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
