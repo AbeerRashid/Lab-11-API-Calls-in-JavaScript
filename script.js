@@ -101,4 +101,3 @@ document.getElementById("putForm").addEventListener("submit", (e) => {
 
     xhr.send(JSON.stringify({ title, body }));
 });
-
