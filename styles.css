@@ -52,21 +52,21 @@ input, textarea {
     margin: 10px 0;
 }
 
-.post-box {
-  width: 100%;
-  max-width: 500px; /* or whatever size you want */
-  padding: 20px;
+form {
+  max-width: 500px;      /* keeps the form from stretching too wide */
+  margin: 20px auto;     /* centers the form */
+  padding: 20px;         /* adds space inside the box */
   border: 1px solid #ccc;
   border-radius: 8px;
-
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   box-sizing: border-box;
 }
 
-.post-box input,
-.post-box textarea,
-.post-box button {
+form input,
+form textarea,
+form button {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
