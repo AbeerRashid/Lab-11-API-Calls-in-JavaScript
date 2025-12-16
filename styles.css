@@ -38,16 +38,21 @@ button:hover {
 }
 
 form {
-    width: 80%;
-    margin: 20px auto;
-    background: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  max-width: 500px;      /* keeps the form from stretching too wide */
+  margin: 20px auto;     /* centers the form */
+  padding: 20px;         /* adds space inside the box */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+form input,
+form textarea,
+form button {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
